@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Icon file on some volumes
+Icon?
+
+# Trash
+.Trashes
+# Spotlight files
+.Spotlight-V100
+# Volume info
+.VolumeIcon.icns
+
+# macOS system files
+.fseventsd
+.TemporaryItems
+.apdisk
+
+# Node / npm (si usás algo tipo vite, parcel, o npm scripts)
+node_modules/
+dist/
+build/
+.cache/
+*.log
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+
+# Temp and backup files
+*.swp
+*.tmp
+*.bak
+
+# Environment files (por si los usás)
+.env
+.env.local
+.env.*.local
+
+# Other OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Output (por si generás páginas estáticas)
+out/
