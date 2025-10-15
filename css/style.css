@@ -63,9 +63,9 @@
 
 .texShadonw {
     color: var(--colorPrimario);
-    text-shadow:    0px 0px 10px #5fa113,
+    text-shadow:    0px 0px 10px #da2fe3,
                     0px 0px 20px #e0d5ac,
-                    0px 0px 40px #8fdf0f,
+                    0px 0px 40px #830474,
                     0px 0px 80px #ece5c9;
 }
 
@@ -121,7 +121,7 @@
     content: "";
     background: linear-gradient(
         45deg,
-        #3e7c3b, #a2a27f, #a58007, #334e36, #a2a27f, #a58007, #334e36, #a58007
+        #3e7c3b, #a2a27f, #b11fc1, #599313, #a2a27f, #a58007, #3b630f, #a58007
     );
     position: absolute;
     top: -5px;
@@ -176,7 +176,7 @@
     content: "";
     background: linear-gradient(
         45deg,
-        #3e7c3b, #a2a27f, #a58007, #334e36, #a2a27f, #a58007, #334e36, #a58007
+         #3e7c3b, #a2a27f, #b11fc1, #599313, #a2a27f, #a58007, #3b630f, #a58007
     );
     position: absolute;
     top: -5px;
@@ -226,7 +226,7 @@
     content: "";
     background: linear-gradient(
         45deg,
-        #3e7c3b, #a2a27f, #a58007, #599313, #a2a27f, #a58007, #3b630f, #a58007
+        #3e7c3b, #a2a27f, #b11fc1, #599313, #a2a27f, #a58007, #3b630f, #a58007
     );
     position: absolute;
     top: -2px;

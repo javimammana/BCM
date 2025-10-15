@@ -46,32 +46,28 @@ mapa.innerHTML = `<iframe class="col-10 rounded-4 my-5" src="${direccionLink}" w
 
 const esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-const mapa2 = document.querySelector("#ubicacion2");
-mapa2.innerHTML = `<iframe class="col-10 rounded-4 my-5" src="${direccionLink2}" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
 
 
-
-function abrirMapa(n) {
+function abrirMapa() {
 
 
     if (esMovil) {
         let appUrl;
 
         if (/Android/i.test(navigator.userAgent)) {
-            appUrl = n==1 ? `geo:${coordenadas}?q=${coordenadas}` : `geo:${coordenadas2}?q=${coordenadas2}`;
-        } else {
-            appUrl = n==1 ? `comgooglemaps://?q=${coordenadas}` : `comgooglemaps://?q=${coordenadas2}`;
+            appUrl = `geo:${coordenadas}?q=${coordenadas}`
+        } else {appUrl = `comgooglemaps://?q=${coordenadas}`
         }
 
         window.location.href = appUrl;
 
         setTimeout(() => {
-            window.open(n==1 ? direccionLink : direccionLink2, '_blank');
+            window.open(direccionLink, '_blank');
         }, 1000);
     } else {
         // Escritorio: abrir en nueva pestaña
-        window.open(n==1 ? direccionLink : direccionLink2, '_blank');
+        window.open(direccionLink, '_blank');
     }
 }
 
